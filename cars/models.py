@@ -2,6 +2,7 @@ from django.db import models
 
 
 class Car(models.Model):
+    objects = None
     brand = models.CharField(max_length=60)
     mark = models.CharField(max_length=60)
     year = models.IntegerField()
